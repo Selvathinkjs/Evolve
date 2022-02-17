@@ -1,4 +1,4 @@
-//api - localhost:3000/api/register
+
 
 require("dotenv").config();
 const express = require("express");
