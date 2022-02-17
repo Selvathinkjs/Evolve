@@ -1,12 +1,6 @@
 const con = require("../db/connect");
 
-const getRegister = async (req, res) => {
-  const sql = "SELECT * FROM Register";
-  con.query(sql, (err, rows, field) => {
-    if (err) throw err;
-    res.status(200).json({ msg: rows });
-  });
-};
+
 // register
 
 const createRegister = async (req, res) => {
@@ -99,6 +93,6 @@ const createRegister = async (req, res) => {
 };
 
 module.exports = {
-  getRegister,
-  createRegister,
+ 
+  createRegister
 };
