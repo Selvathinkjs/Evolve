@@ -1,0 +1,31 @@
+
+
+Input Parameter
+---------------
+
+{
+            "fullName": "Arunachalem Perumal",
+            "Mobile_Number": "+91 9876789087",
+            "Work_Email": "arunachalem@gmail.com",
+            "Appointment_Date": "2022-3-4",
+            "City": "Bangalore",
+            "State": "Karnataka",
+            "Learn_skills": "NodeJS course with project",
+            "Learn_budget": 450,
+            "Zero_cost_EMI": 1,
+            "Explore_learning_options": 1,
+            "Aadharcard": 789687659876,
+            "Pancard": "F45HJ4BG",
+            "Dateofbirth": "1985-4-7",
+            "Gender": "F",
+            "Marital_status": "yes",
+            "Current_residency_pincode": 560076
+}
+
+--------------------------------------------------------------------------------------------------------------------
+
+Output
+------
+{
+    "msg": "User Registered"
+}

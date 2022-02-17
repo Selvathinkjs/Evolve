@@ -1,0 +1,51 @@
+Enquiry_details  => Table1
+===============
+create table Register
+      (id int not null auto_increment primary key, 
+        fullName varchar(50) not null, 
+        Mobile_Number varchar(14) not null,
+        Work_Email varchar(70) not null,  
+        Appointment_Date Date not null, 
+        City varchar(30), 
+        State varchar(30), 
+        Learn_skills varchar(100) not null, 
+        Learn_budget float, 
+        Zero_cost_EMI TINYINT default 1,
+        Explore_learning_options TINYINT default 1, 
+        Aadharcard bigint, 
+        Pancard varchar(30), 
+        Dateofbirth Date, 
+        Gender varchar(20), 
+        Marital_status varchar(30), 
+        Current_residency_pincode int, 
+        CreatedAt timestamp default current_timestamp, 
+        UpdatedAt timestamp, 
+       Active_Flag TINYINT default 1);
+================================================================================================================
+
+create trigger for updatedAt - Register table
+============================   ===================== 
+
+ create trigger updatedate before update ON Enquiry_details for EACH ROW SET new.UpdatedAt = Now();
+
+================================================================================================================
+
+Insert Value
+============
+
+insert into Register(fullName, Mobile_Number,Work_Email,Appointment_Date, City, State,
+Learn_skills, Learn_budget, Zero_cost_EMI, Explore_learning_options,Aadharcard, Pancard, Dateofbirth, 
+Gender, Marital_status,Current_residency_pincode) values( 'Akash Kumar S', '+91 9876098765', 'akash@gmail.com',
+'2022-2-20','Bangalore','Karnataka','Node JS Course with project','300.60',0,0,154398765476,'C4RT678H',
+'1980-3-10','M','yes',560080);
+=================================================================================================================
+
+
+
+
+
+
+
+
+
+
